@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Haber Glasbau - Modern Glass Architecture</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
-<!-- Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Theme Configuration -->
-<script id="tailwind-config">
+<html class="light" lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Haber Glasbau - Modern Glass Architecture</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <!-- Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -44,385 +50,468 @@
             },
         }
     </script>
-<style>
+    <style>
         /* Custom scrollbar hiding for horizontal scroll areas */
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
+
         .scrollbar-hide {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-        
+
         /* Glassmorphism utility */
         .glass-panel {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
+
         .dark .glass-panel {
             background: rgba(30, 41, 59, 0.7);
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased min-h-screen flex flex-col transition-colors duration-300">
-<!-- Navigation -->
-<header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-200/50 dark:border-slate-700/50 transition-all duration-300">
-<div class="max-w-[1280px] mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
-<!-- Logo -->
-<a class="flex items-center gap-3 group" href="#">
-<div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-<span class="material-symbols-outlined text-[28px]">architecture</span>
-</div>
-<div class="flex flex-col">
-<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white leading-none">Haber</span>
-<span class="text-sm font-medium tracking-wide text-slate-500 dark:text-slate-400 leading-none">Glasbau</span>
-</div>
-</a>
-<!-- Desktop Nav -->
-<nav class="hidden lg:flex items-center gap-8">
-<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
-<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Gallery</a>
-<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Services</a>
-<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">References</a>
-<a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
-</nav>
-<!-- Actions -->
-<div class="flex items-center gap-4">
-<button class="hidden md:flex items-center justify-center h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded-full transition-all shadow-lg shadow-primary/20">
-                    Request Quote
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased min-h-screen flex flex-col transition-colors duration-300">
+    <!-- Navigation -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-200/50 dark:border-slate-700/50 transition-all duration-300">
+        <div class="max-w-[1280px] mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a class="flex items-center gap-3 group" href="#">
+                <div
+                    class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <span class="material-symbols-outlined text-[28px]">architecture</span>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="text-xl font-bold tracking-tight text-slate-900 dark:text-white leading-none">Haber</span>
+                    <span
+                        class="text-sm font-medium tracking-wide text-slate-500 dark:text-slate-400 leading-none">Glasbau</span>
+                </div>
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="#">Startseite</a>
+                <a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="#">Galerie</a>
+                <a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="#">Leistungen</a>
+                <a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="#">Referenzen</a>
+                <a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="#">Kontakt</a>
+            </nav>
+            <!-- Actions -->
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden md:flex items-center justify-center h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded-full transition-all shadow-lg shadow-primary/20">
+                    Angebot anfordern
                 </button>
-<button class="lg:hidden p-2 text-slate-600 dark:text-slate-300">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</header>
-<!-- Main Content -->
-<main class="flex-grow pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[600px] lg:h-[80vh] flex items-center justify-center overflow-hidden">
-<!-- Background Image -->
-<div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" data-alt="Modern office building glass facade reflecting blue sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOius8z5B6rhuzdheHPkDKxKKuaueT_tgcKQj9qHa8mpLBcbsWp3F8NhqRjFX_hE6_tFe5nHH4ElozOkvNaYbM07xHbusNdbzd0MGeJjHv5LvNNkFwLjTTqyZ6U1M7BboarU55cIw8cgweast6aiJgIBe8CMBefMFUFJwTjZ7W9katgolNiUpzjY6Cn7ZuLKB3VcA9iIFfvpXSoNdGOCsxezh6xlQZsn32rf4TbESoNtaaO2uZRh18SFZNGWR2U3caM3nhZHY10Ybi');">
-<div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-slate-900/20 backdrop-brightness-[0.85]"></div>
-</div>
-<!-- Content -->
-<div class="relative z-10 container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
-<div class="flex flex-col gap-6 max-w-2xl text-center md:text-left">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm w-fit mx-auto md:mx-0">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="text-xs font-medium text-white tracking-wider uppercase">Premium Craftsmanship since 1995</span>
-</div>
-<h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
-                        Precision in Glass. <br/>
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-sky-300">Excellence in Design.</span>
-</h1>
-<p class="text-lg text-slate-200 font-light max-w-xl mx-auto md:mx-0 leading-relaxed">
-                        German engineering meets modern aesthetics. We transform spaces with light, transparency, and structural elegance for residential and commercial projects.
+                <button class="lg:hidden p-2 text-slate-600 dark:text-slate-300">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="relative min-h-[600px] lg:h-[80vh] flex items-center justify-center overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                data-alt="Modern office building glass facade reflecting blue sky"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOius8z5B6rhuzdheHPkDKxKKuaueT_tgcKQj9qHa8mpLBcbsWp3F8NhqRjFX_hE6_tFe5nHH4ElozOkvNaYbM07xHbusNdbzd0MGeJjHv5LvNNkFwLjTTqyZ6U1M7BboarU55cIw8cgweast6aiJgIBe8CMBefMFUFJwTjZ7W9katgolNiUpzjY6Cn7ZuLKB3VcA9iIFfvpXSoNdGOCsxezh6xlQZsn32rf4TbESoNtaaO2uZRh18SFZNGWR2U3caM3nhZHY10Ybi');">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-slate-900/20 backdrop-brightness-[0.85]">
+                </div>
+            </div>
+            <!-- Content -->
+            <div
+                class="relative z-10 container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="flex flex-col gap-6 max-w-2xl text-center md:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm w-fit mx-auto md:mx-0">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span class="text-xs font-medium text-white tracking-wider uppercase">Erstklassige
+                            Handwerkskunst seit 1995</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
+                        Präzision in Glas. <br />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-sky-300">Exzellenz
+                            im Design.</span>
+                    </h1>
+                    <p class="text-lg text-slate-200 font-light max-w-xl mx-auto md:mx-0 leading-relaxed">
+                        Deutsche Ingenieurskunst trifft auf moderne Ästhetik. Wir verwandeln Räume mit Licht,
+                        Transparenz und struktureller Eleganz für private und gewerbliche Projekte.
                     </p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-<button class="h-12 px-8 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2 group">
-                            Explore Our Craft
-                            <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-<button class="h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold rounded-lg transition-all flex items-center justify-center">
-                            View Gallery
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                        <button
+                            class="h-12 px-8 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2 group">
+                            Entdecken Sie unser Handwerk
+                            <span
+                                class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
                         </button>
-</div>
-</div>
-</div>
-<!-- Scroll Indicator -->
-<div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block text-white/50">
-<span class="material-symbols-outlined text-4xl">keyboard_arrow_down</span>
-</div>
-</section>
-<!-- Stats / Trust Bar -->
-<div class="bg-white dark:bg-surface-dark border-b border-slate-100 dark:border-slate-800 py-8 relative z-20 -mt-2 mx-4 md:mx-12 rounded-xl shadow-xl">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8">
-<div class="flex flex-col items-center justify-center text-center">
-<span class="text-3xl font-bold text-slate-900 dark:text-white">28+</span>
-<span class="text-sm text-slate-500 font-medium">Years Experience</span>
-</div>
-<div class="flex flex-col items-center justify-center text-center">
-<span class="text-3xl font-bold text-slate-900 dark:text-white">500+</span>
-<span class="text-sm text-slate-500 font-medium">Projects Completed</span>
-</div>
-<div class="flex flex-col items-center justify-center text-center">
-<span class="text-3xl font-bold text-slate-900 dark:text-white">100%</span>
-<span class="text-sm text-slate-500 font-medium">Made in Germany</span>
-</div>
-<div class="flex flex-col items-center justify-center text-center">
-<span class="text-3xl font-bold text-slate-900 dark:text-white">24/7</span>
-<span class="text-sm text-slate-500 font-medium">Support Service</span>
-</div>
-</div>
-</div>
-<!-- Services Section -->
-<section class="py-20 md:py-32 px-4 md:px-8 max-w-[1280px] mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-<div class="max-w-2xl">
-<span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Our Expertise</span>
-<h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
-                        Comprehensive glass solutions for every architectural vision.
+                        <button
+                            class="h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold rounded-lg transition-all flex items-center justify-center">
+                            Galerie ansehen
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block text-white/50">
+                <span class="material-symbols-outlined text-4xl">keyboard_arrow_down</span>
+            </div>
+        </section>
+        <!-- Stats / Trust Bar -->
+        <div
+            class="bg-white dark:bg-surface-dark border-b border-slate-100 dark:border-slate-800 py-8 relative z-20 -mt-2 mx-4 md:mx-12 rounded-xl shadow-xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="text-3xl font-bold text-slate-900 dark:text-white">28+</span>
+                    <span class="text-sm text-slate-500 font-medium">Jahre Erfahrung</span>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="text-3xl font-bold text-slate-900 dark:text-white">500+</span>
+                    <span class="text-sm text-slate-500 font-medium">Abgeschlossene Projekte</span>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="text-3xl font-bold text-slate-900 dark:text-white">100%</span>
+                    <span class="text-sm text-slate-500 font-medium">Made in Germany</span>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="text-3xl font-bold text-slate-900 dark:text-white">24/7</span>
+                    <span class="text-sm text-slate-500 font-medium">Kundenservice</span>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section -->
+        <section class="py-20 md:py-32 px-4 md:px-8 max-w-[1280px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Unsere
+                        Expertise</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
+                        Umfassende Glaslösungen für jede architektonische Vision.
                     </h2>
-</div>
-<a class="text-slate-900 dark:text-white font-bold flex items-center gap-2 hover:text-primary transition-colors whitespace-nowrap" href="#">
-                    View all services
+                </div>
+                <a class="text-slate-900 dark:text-white font-bold flex items-center gap-2 hover:text-primary transition-colors whitespace-nowrap"
+                    href="#">
+                    Alle Leistungen ansehen
                     <span class="material-symbols-outlined text-lg">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Service 1 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern structural glass facade of a commercial building" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCA7tCVF9NVFw2FB-5hU47RztbyTE8c3ujljLU1CsH_9pjqdxi_2w7-iIB9kBBn1c1tLsM8ZBwO0q0miFr49AYtziIH49CHQk6IBKM_Lo--IqRkKhzKFVmujP0qgb9CONj3SmdlyZtUpmWbQ72czWfv5IFgMZwzO9rukuKo67RH3uU3r4e0Yw915zwR415bCn5-c8vgoELJReJglGcsFOQPhecnwgSBNcH9-FcRgR9dOyx79OE3ovu0C717YS5qZpOX_ABntj4naeiR');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
-<div class="w-12 h-12 bg-primary/90 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white">
-<span class="material-symbols-outlined">apartment</span>
-</div>
-<h3 class="text-xl font-bold text-white mb-2">Glass Construction</h3>
-<p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                            Custom structural glazing and facades engineered for durability and light.
+                </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Modern structural glass facade of a commercial building"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCA7tCVF9NVFw2FB-5hU47RztbyTE8c3ujljLU1CsH_9pjqdxi_2w7-iIB9kBBn1c1tLsM8ZBwO0q0miFr49AYtziIH49CHQk6IBKM_Lo--IqRkKhzKFVmujP0qgb9CONj3SmdlyZtUpmWbQ72czWfv5IFgMZwzO9rukuKo67RH3uU3r4e0Yw915zwR415bCn5-c8vgoELJReJglGcsFOQPhecnwgSBNcH9-FcRgR9dOyx79OE3ovu0C717YS5qZpOX_ABntj4naeiR');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
+                        <div
+                            class="w-12 h-12 bg-primary/90 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white">
+                            <span class="material-symbols-outlined">apartment</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Glasbau</h3>
+                        <p
+                            class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            Maßgeschneiderte Strukturverglasung und Fassaden, entwickelt für Langlebigkeit und Licht.
                         </p>
-</div>
-</div>
-<!-- Service 2 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Artistic stained glass window detail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHl_0ZPbmImSgR0slsd1Uom6g8iiF0qf6aIxbfruuQXq7GKbGGtD3VaFmUeXKZ4InCgHbOkRtYoupGYc7-ejw0x8aNRwLXJnFfden55vUJOiFeaMUhSfHPkT3a8vQBL13O-78Dhk5ooSP8sqiwUMcU6LS1xi1qA5thgByHNxSL9Pfbiy9Idg5sgPknShfFHz5kw2N6fS1sTnkOj_FFca0kmqR8bz8pO7dHqyJ2jpoj5oFQDPp8313apU17gwKlR6GnrpCV5OCxuFLW');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
-<div class="w-12 h-12 bg-white/20 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-primary/90 transition-colors">
-<span class="material-symbols-outlined">palette</span>
-</div>
-<h3 class="text-xl font-bold text-white mb-2">Art Glass</h3>
-<p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                            Bespoke decorative pieces that add character and color to any interior.
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Artistic stained glass window detail"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHl_0ZPbmImSgR0slsd1Uom6g8iiF0qf6aIxbfruuQXq7GKbGGtD3VaFmUeXKZ4InCgHbOkRtYoupGYc7-ejw0x8aNRwLXJnFfden55vUJOiFeaMUhSfHPkT3a8vQBL13O-78Dhk5ooSP8sqiwUMcU6LS1xi1qA5thgByHNxSL9Pfbiy9Idg5sgPknShfFHz5kw2N6fS1sTnkOj_FFca0kmqR8bz8pO7dHqyJ2jpoj5oFQDPp8313apU17gwKlR6GnrpCV5OCxuFLW');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
+                        <div
+                            class="w-12 h-12 bg-white/20 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-primary/90 transition-colors">
+                            <span class="material-symbols-outlined">palette</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Kunstglas</h3>
+                        <p
+                            class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            Maßgeschneiderte dekorative Stücke, die jedem Interieur Charakter und Farbe verleihen.
                         </p>
-</div>
-</div>
-<!-- Service 3 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Technician repairing a glass window pane" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGZYPOF2IN-Go-y0TQa9qrbtd4EXujjPtofasx33dYq4Ac1ZbD1RJYL1M--jtTW0qds6Dh-K3xPgZQpXZXjQNFNS1nxbaLTV_nSChyINl08HGht9-bnPVWH1P5GcHilA9hqup3KUswMKIs-Z1yZLJF6QBHcmgaLq_PX5L3kuN3NAA5MMkNYzHdWjZl1hjUiVQtpLcCoLxKLGS6SGlGySLx1p3IzaDLEk9vkyTh8AzzDgCkl05YWG0CoBmpM_jXQK9vEDij_SiakOX_');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
-<div class="w-12 h-12 bg-white/20 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-primary/90 transition-colors">
-<span class="material-symbols-outlined">build</span>
-</div>
-<h3 class="text-xl font-bold text-white mb-2">Repairs</h3>
-<p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                            Rapid response repair services for broken windows, doors, and facades.
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Technician repairing a glass window pane"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGZYPOF2IN-Go-y0TQa9qrbtd4EXujjPtofasx33dYq4Ac1ZbD1RJYL1M--jtTW0qds6Dh-K3xPgZQpXZXjQNFNS1nxbaLTV_nSChyINl08HGht9-bnPVWH1P5GcHilA9hqup3KUswMKIs-Z1yZLJF6QBHcmgaLq_PX5L3kuN3NAA5MMkNYzHdWjZl1hjUiVQtpLcCoLxKLGS6SGlGySLx1p3IzaDLEk9vkyTh8AzzDgCkl05YWG0CoBmpM_jXQK9vEDij_SiakOX_');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
+                        <div
+                            class="w-12 h-12 bg-white/20 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-primary/90 transition-colors">
+                            <span class="material-symbols-outlined">build</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Reparaturen</h3>
+                        <p
+                            class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            Schneller Reparaturservice für zerbrochene Fenster, Türen und Fassaden.
                         </p>
-</div>
-</div>
-<!-- Service 4 -->
-<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Large custom mirror in a modern bathroom interior" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9iHx_3m-1f5jm30VgupNko0dTPvi7COpb2VLDieNGv6Ewt4vLOJ7epqtCJml728GaM0moLsk7qrw8KAi8T6K-NaddN3Bfvhio8w2nXHeJlNUze33arvjagH2yhI4zHlUUjF8YJLsduN5csU_t0VuOlNEVV3RI-abrynTZr6m8akpnfUqPeD64Dmc6M-91xhHjIQ7NOtYil5O2sBVIHUSG5rRpPNfQuUdiyfwwfZlfIya-e9pcs49FTiS6ee-ASF3AknQEc3ca0enP');"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-<div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
-<div class="w-12 h-12 bg-white/20 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-primary/90 transition-colors">
-<span class="material-symbols-outlined">crop_free</span>
-</div>
-<h3 class="text-xl font-bold text-white mb-2">Mirrors</h3>
-<p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                            High-quality custom mirrors cut to size for bathrooms, gyms, and halls.
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Large custom mirror in a modern bathroom interior"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9iHx_3m-1f5jm30VgupNko0dTPvi7COpb2VLDieNGv6Ewt4vLOJ7epqtCJml728GaM0moLsk7qrw8KAi8T6K-NaddN3Bfvhio8w2nXHeJlNUze33arvjagH2yhI4zHlUUjF8YJLsduN5csU_t0VuOlNEVV3RI-abrynTZr6m8akpnfUqPeD64Dmc6M-91xhHjIQ7NOtYil5O2sBVIHUSG5rRpPNfQuUdiyfwwfZlfIya-e9pcs49FTiS6ee-ASF3AknQEc3ca0enP');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full transform transition-transform duration-300">
+                        <div
+                            class="w-12 h-12 bg-white/20 backdrop-blur rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-primary/90 transition-colors">
+                            <span class="material-symbols-outlined">crop_free</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Spiegel</h3>
+                        <p
+                            class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            Hochwertige maßgefertigte Spiegel für Badezimmer, Fitnessstudios und Hallen.
                         </p>
-</div>
-</div>
-</div>
-</section>
-<!-- About / CTA Section -->
-<section class="bg-white dark:bg-surface-dark py-20 border-y border-slate-100 dark:border-slate-800">
-<div class="max-w-[1280px] mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-16 items-center">
-<div class="relative">
-<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
-<div class="relative rounded-2xl overflow-hidden shadow-2xl">
-<img alt="Interior of a modern office with glass partitions" class="w-full h-auto object-cover aspect-video" data-alt="Interior of a modern office with glass partitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOFnPghlHlOZFiGQa80mIcTQicjew1e2ttpJt40MrKvBcoGiJ_6o8yYg4EY7AadLT-yV9Mmo7-Y9tZbJqCMQVOgKu6siVXOkxarnVU1IRLOR25N-FnF2WjUztbNWIKpdFR-O0423Zo6wmo8hfNFShf6e4RQM16l-geLPhIFDzyMG2PAmNIo3qUPkTuhQtOE4awEQpGX-YL6Rw5UgnYss0SGhHuAKrg_SaqfW2l-Gh0xM0NMnfwqQ1xuiteJ4V7_N7-owc2YCbsC0tB"/>
-</div>
-<!-- Overlap Card -->
-<div class="absolute -bottom-8 -right-8 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl max-w-[240px] hidden lg:block border border-slate-100 dark:border-slate-700">
-<div class="flex items-center gap-3 mb-3">
-<div class="text-yellow-400">
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-</div>
-</div>
-<p class="text-sm text-slate-600 dark:text-slate-300 italic">"The attention to detail in our new office facade is simply outstanding."</p>
-<p class="text-xs font-bold text-slate-900 dark:text-white mt-2">- Schmidt Architects</p>
-</div>
-</div>
-<div class="flex flex-col gap-6">
-<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
-                        Master Craftsmanship <br/> Since 1995.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About / CTA Section -->
+        <section class="bg-white dark:bg-surface-dark py-20 border-y border-slate-100 dark:border-slate-800">
+            <div class="max-w-[1280px] mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img alt="Interior of a modern office with glass partitions"
+                            class="w-full h-auto object-cover aspect-video"
+                            data-alt="Interior of a modern office with glass partitions"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOFnPghlHlOZFiGQa80mIcTQicjew1e2ttpJt40MrKvBcoGiJ_6o8yYg4EY7AadLT-yV9Mmo7-Y9tZbJqCMQVOgKu6siVXOkxarnVU1IRLOR25N-FnF2WjUztbNWIKpdFR-O0423Zo6wmo8hfNFShf6e4RQM16l-geLPhIFDzyMG2PAmNIo3qUPkTuhQtOE4awEQpGX-YL6Rw5UgnYss0SGhHuAKrg_SaqfW2l-Gh0xM0NMnfwqQ1xuiteJ4V7_N7-owc2YCbsC0tB" />
+                    </div>
+                    <!-- Overlap Card -->
+                    <div
+                        class="absolute -bottom-8 -right-8 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl max-w-[240px] hidden lg:block border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="text-yellow-400">
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                                <span class="material-symbols-outlined text-sm">star</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 italic">"Die Liebe zum Detail bei unserer
+                            neuen Bürofassade ist einfach hervorragend."</p>
+                        <p class="text-xs font-bold text-slate-900 dark:text-white mt-2">- Schmidt Architekten</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+                        Meisterhafte Handwerkskunst <br /> seit 1995.
                     </h2>
-<p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
-                        At Haber Glasbau, we don't just install glass; we curate transparency. We bring light into your spaces with precision German engineering. From residential bespoke showers to large-scale commercial facades, our team ensures perfection in every cut and polish.
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                        Bei Haber Glasbau installieren wir nicht nur Glas; wir kuratieren Transparenz. Wir bringen Licht
+                        in Ihre Räume mit präziser deutscher Ingenieurskunst. Von maßgeschneiderten Duschen bis hin zu
+                        großen gewerblichen Fassaden sorgt unser Team für Perfektion bei jedem Schnitt und jeder
+                        Politur.
                     </p>
-<div class="flex flex-col gap-4 mt-4">
-<div class="flex items-start gap-4">
-<div class="min-w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mt-1">
-<span class="material-symbols-outlined">check</span>
-</div>
-<div>
-<h4 class="font-bold text-slate-900 dark:text-white">Certified Safety Glass</h4>
-<p class="text-slate-500 dark:text-slate-400 text-sm">We use only high-grade, certified safety glass for maximum durability.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="min-w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mt-1">
-<span class="material-symbols-outlined">check</span>
-</div>
-<div>
-<h4 class="font-bold text-slate-900 dark:text-white">Custom Engineering</h4>
-<p class="text-slate-500 dark:text-slate-400 text-sm">Tailored solutions that fit your specific architectural requirements.</p>
-</div>
-</div>
-</div>
-<div class="pt-6">
-<button class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary dark:hover:bg-slate-200 px-8 py-3 rounded-lg font-bold transition-colors inline-flex items-center gap-2">
-                            About Our Company
+                    <div class="flex flex-col gap-4 mt-4">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="min-w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mt-1">
+                                <span class="material-symbols-outlined">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 dark:text-white">Zertifiziertes Sicherheitsglas</h4>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm">Wir verwenden nur hochwertiges,
+                                    zertifiziertes Sicherheitsglas für maximale Haltbarkeit.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="min-w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mt-1">
+                                <span class="material-symbols-outlined">check</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 dark:text-white">Maßgeschneiderte Entwicklung</h4>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm">Maßgeschneiderte Lösungen, die
+                                    Ihren spezifischen architektonischen Anforderungen entsprechen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-6">
+                        <button
+                            class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary dark:hover:bg-slate-200 px-8 py-3 rounded-lg font-bold transition-colors inline-flex items-center gap-2">
+                            Über unser Unternehmen
                         </button>
-</div>
-</div>
-</div>
-</section>
-<!-- References / Partners -->
-<section class="py-16 overflow-hidden">
-<div class="max-w-[1280px] mx-auto px-4 md:px-8 mb-10 text-center">
-<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Trusted by Industry Leaders</h3>
-<div class="w-12 h-1 bg-primary mx-auto rounded-full"></div>
-</div>
-<div class="flex overflow-x-auto scrollbar-hide space-x-8 px-4 md:justify-center items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500 pb-4">
-<div class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
-<span class="text-slate-400 font-bold">BAUHAUS</span>
-</div>
-<div class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
-<span class="text-slate-400 font-bold">SIEMENS</span>
-</div>
-<div class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
-<span class="text-slate-400 font-bold">BMW</span>
-</div>
-<div class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
-<span class="text-slate-400 font-bold">ALLIANZ</span>
-</div>
-<div class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
-<span class="text-slate-400 font-bold">HOCHTIEF</span>
-</div>
-<div class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
-<span class="text-slate-400 font-bold">ADIDAS</span>
-</div>
-</div>
-</section>
-<!-- Contact CTA -->
-<section class="relative bg-primary text-white py-20 overflow-hidden">
-<!-- Decorative circle -->
-<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-black/10 rounded-full blur-3xl"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-<h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to bring your vision to life?</h2>
-<p class="text-primary-50 text-lg mb-10 max-w-2xl mx-auto">
-                    Whether you need a simple mirror replacement or a complex glass facade, our experts are here to help. Get a free consultation today.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- References / Partners -->
+        <section class="py-16 overflow-hidden">
+            <div class="max-w-[1280px] mx-auto px-4 md:px-8 mb-10 text-center">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Vertraut von Branchenführern</h3>
+                <div class="w-12 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div
+                class="flex overflow-x-auto scrollbar-hide space-x-8 px-4 md:justify-center items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500 pb-4">
+                <div
+                    class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
+                    <span class="text-slate-400 font-bold">BAUHAUS</span>
+                </div>
+                <div
+                    class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
+                    <span class="text-slate-400 font-bold">SIEMENS</span>
+                </div>
+                <div
+                    class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
+                    <span class="text-slate-400 font-bold">BMW</span>
+                </div>
+                <div
+                    class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
+                    <span class="text-slate-400 font-bold">ALLIANZ</span>
+                </div>
+                <div
+                    class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
+                    <span class="text-slate-400 font-bold">HOCHTIEF</span>
+                </div>
+                <div
+                    class="flex-shrink-0 h-16 w-32 bg-slate-200 dark:bg-slate-800 rounded flex items-center justify-center">
+                    <span class="text-slate-400 font-bold">ADIDAS</span>
+                </div>
+            </div>
+        </section>
+        <!-- Contact CTA -->
+        <section class="relative bg-primary text-white py-20 overflow-hidden">
+            <!-- Decorative circle -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-black/10 rounded-full blur-3xl"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Bereit, Ihre Vision zum Leben zu erwecken?</h2>
+                <p class="text-primary-50 text-lg mb-10 max-w-2xl mx-auto">
+                    Ob Sie einen einfachen Spiegelaustausch oder eine komplexe Glasfassade benötigen, unsere Experten
+                    sind für Sie da. Fordern Sie noch heute eine kostenlose Beratung an.
                 </p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<button class="bg-white text-primary hover:bg-slate-100 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-colors">
-                        Request a Quote
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                        class="bg-white text-primary hover:bg-slate-100 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-colors">
+                        Angebot anfordern
                     </button>
-<button class="bg-primary-dark border border-white/20 hover:bg-primary-dark/80 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-colors">
-                        Call Us: +49 89 123456
+                    <button
+                        class="bg-primary-dark border border-white/20 hover:bg-primary-dark/80 px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-colors">
+                        Rufen Sie uns an: +49 89 123456
                     </button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-slate-900 text-slate-300 py-16">
-<div class="max-w-[1280px] mx-auto px-4 md:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-<!-- Brand -->
-<div class="flex flex-col gap-6">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 bg-primary rounded flex items-center justify-center text-white">
-<span class="material-symbols-outlined text-[20px]">architecture</span>
-</div>
-<span class="text-xl font-bold text-white tracking-tight">Haber Glasbau</span>
-</div>
-<p class="text-sm leading-relaxed text-slate-400">
-                        Premium glass solutions combining traditional German craftsmanship with modern architectural needs.
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16">
+        <div class="max-w-[1280px] mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-primary rounded flex items-center justify-center text-white">
+                            <span class="material-symbols-outlined text-[20px]">architecture</span>
+                        </div>
+                        <span class="text-xl font-bold text-white tracking-tight">Haber Glasbau</span>
+                    </div>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Premium-Glaslösungen, die traditionelle deutsche Handwerkskunst mit modernen architektonischen
+                        Bedürfnissen verbinden.
                     </p>
-<div class="flex gap-4 mt-2">
-<a class="w-8 h-8 rounded bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
-<span class="text-xs">IG</span>
-</a>
-<a class="w-8 h-8 rounded bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
-<span class="text-xs">FB</span>
-</a>
-<a class="w-8 h-8 rounded bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
-<span class="text-xs">LI</span>
-</a>
-</div>
-</div>
-<!-- Quick Links -->
-<div>
-<h4 class="text-white font-bold mb-6">Explore</h4>
-<ul class="space-y-3 text-sm">
-<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Services</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Gallery</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-</ul>
-</div>
-<!-- Contact Info -->
-<div>
-<h4 class="text-white font-bold mb-6">Contact</h4>
-<ul class="space-y-4 text-sm">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
-<span>Glasstraße 12<br/>80331 Munich, Germany</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">call</span>
-<span>+49 89 1234 5678</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">mail</span>
-<span>info@haber-glasbau.de</span>
-</li>
-</ul>
-<div class="mt-6 pt-6 border-t border-slate-800">
-<p class="text-xs text-slate-500 font-bold mb-2 uppercase">Opening Hours</p>
-<div class="flex justify-between text-sm mb-1">
-<span>Mon - Fri:</span>
-<span class="text-white">08:00 - 18:00</span>
-</div>
-<div class="flex justify-between text-sm">
-<span>Sat:</span>
-<span class="text-white">09:00 - 13:00</span>
-</div>
-</div>
-</div>
-<!-- Map -->
-<div class="h-full min-h-[200px] rounded-lg overflow-hidden relative group">
-<img alt="Map location of Haber Glasbau in Munich" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity" data-location="Munich" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpyTb2Y6X4WkCkTpvBpfmjxp3_bDEnTjJ7Vy9-U9IGJhViWEozxkzZRXXfUAcHJ2Qr4olEArCQogbR1U5V1f7s4uHN7GdgPDMeLi3cuULRfVFQrJVu_gGRjBXfzfycndn0PwhJJZSWcIvGrLZbuv8yBuf-YSIoUX5zzQBw8YfVmxLu3ngq8OVp44DDe3MYF4sgLN6Cakh20cOo4k2X40_SJnO2uSbVopo-2j_QdCNd6K5lQ-V7g9DA3NVKoc9Vn4hYiRQicZn4TvzX"/>
-<div class="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors"></div>
-<a class="absolute inset-0 flex items-center justify-center group-hover:scale-105 transition-transform" href="#">
-<div class="bg-white text-slate-900 p-3 rounded-full shadow-lg flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">near_me</span>
-<span class="font-bold text-sm">Get Directions</span>
-</div>
-</a>
-</div>
-</div>
-<div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-<p>© 2026 Haber Glasbau GmbH. All rights reserved.</p>
-<div class="flex gap-6">
-<a class="hover:text-white transition-colors" href="#">Imprint</a>
-<a class="hover:text-white transition-colors" href="#">Data Protection</a>
-<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
-</body></html>
+                    <div class="flex gap-4 mt-2">
+                        <a class="w-8 h-8 rounded bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <span class="text-xs">IG</span>
+                        </a>
+                        <a class="w-8 h-8 rounded bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <span class="text-xs">FB</span>
+                        </a>
+                        <a class="w-8 h-8 rounded bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <span class="text-xs">LI</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Entdecken</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Startseite</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Über uns</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Leistungen</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Galerie</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Datenschutzerklärung</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+                            <span>Glasstraße 12<br />80331 Munich, Germany</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <span>+49 89 1234 5678</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            <span>info@haber-glasbau.de</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-slate-800">
+                        <p class="text-xs text-slate-500 font-bold mb-2 uppercase">Öffnungszeiten</p>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Mo - Fr:</span>
+                            <span class="text-white">08:00 - 18:00</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span>Sa:</span>
+                            <span class="text-white">09:00 - 13:00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div class="h-full min-h-[200px] rounded-lg overflow-hidden relative group">
+                    <img alt="Map location of Haber Glasbau in Munich"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+                        data-location="Munich"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpyTb2Y6X4WkCkTpvBpfmjxp3_bDEnTjJ7Vy9-U9IGJhViWEozxkzZRXXfUAcHJ2Qr4olEArCQogbR1U5V1f7s4uHN7GdgPDMeLi3cuULRfVFQrJVu_gGRjBXfzfycndn0PwhJJZSWcIvGrLZbuv8yBuf-YSIoUX5zzQBw8YfVmxLu3ngq8OVp44DDe3MYF4sgLN6Cakh20cOo4k2X40_SJnO2uSbVopo-2j_QdCNd6K5lQ-V7g9DA3NVKoc9Vn4hYiRQicZn4TvzX" />
+                    <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors"></div>
+                    <a class="absolute inset-0 flex items-center justify-center group-hover:scale-105 transition-transform"
+                        href="#">
+                        <div class="bg-white text-slate-900 p-3 rounded-full shadow-lg flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">near_me</span>
+                            <span class="font-bold text-sm">Wegbeschreibung</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>© 2026 Haber Glasbau GmbH. Alle Rechte vorbehalten.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-white transition-colors" href="#">Impressum</a>
+                    <a class="hover:text-white transition-colors" href="#">Datenschutz</a>
+                    <a class="hover:text-white transition-colors" href="#">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
